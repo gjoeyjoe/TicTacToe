@@ -4,18 +4,10 @@
 using namespace std;
 
 int main() {
-	/*check whose turn it is
-	display the board
-	see where they would like to place their item by choosing row, then choosing column
-	if that spot is not == " " then retry because it is already taken
-	if that spot == " " then place the appropriate letter there
-	check to see if that results in a win by running a function to check if "row 1 = 'x','x','x'", "row 2 = 'x','x','x'" etc.
-	for diagonals, check if row1col1 = row2col2. if so, if row3col3 = row2col2, it's a win. repeat for row1col3 and row3col1.
-	if no win is detected, switch players.
-	*/
+
 
 	//Declarations
-	vector<char> row1 = { ' ',' ', ' ' }, row2 = row1, row3 = row2;
+	vector<char> row1 = { ' ',' ', ' ' }, row2 = row1, row3 = row1;
 	bool player1Turn = true;
 	bool threeInARow = false;
 	char player1Letter = 'x';
@@ -23,7 +15,7 @@ int main() {
 	char activeLetter = 'x';
 	int answerRow;
 	int answerCol;
-	string winner;
+
 
 	//Start the game
 	greet(); 
@@ -72,6 +64,7 @@ int main() {
 		threeInARow = checkWinCondition(row1, row2, row3);
 
 		if (threeInARow) {
+			string winner;
 			if (player1Turn == true) {
 				winner = "Player 1";
 			}
