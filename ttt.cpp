@@ -56,23 +56,20 @@ int main() {
 			}
 			break;
 		default:
-			cout << "\nThis is an unavailable square. Fuck you, you miss a turn\n";
 			break;
 		}
 
-		//TODO: Check if 3 in a row == true
 		threeInARow = checkWinCondition(row1, row2, row3);
 
 		if (threeInARow) {
-			string winner;
 			if (player1Turn == true) {
-				winner = "Player 1";
+				cout << "The winner is: Player 1";
 			}
 			else {
-				winner = "Player 2";
+				cout << "The winner is: Player 2";
 			}
 
-			cout << "The winner is: " << winner;
+
 		}
 		//Swap turns
 		player1Turn = !player1Turn;
