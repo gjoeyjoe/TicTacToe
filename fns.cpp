@@ -5,7 +5,6 @@ using namespace std;
 void greet() {
 	void printBoard(vector<char> row1, vector<char> row2, vector<char> row3);
 	cout << "Welcome to tic tac toe! Get 3 in a row!\n";
-
 }
 
 void printBoard(vector<char> row1, vector<char> row2, vector<char> row3) {
