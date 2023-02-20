@@ -22,7 +22,7 @@ bool checkAnswerEligible(vector<char> row, int col) {
 		return true;
 	}
 	else {
-		cout << "Already taken up. Fuck you and fuck your turn\n";
+		cout << "Already taken up. I'm lazy so you lose a turn.\n";
 		return false;
 	}
 }
